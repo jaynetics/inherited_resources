@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+## Version 2.0.0
+
+* Test against Rails 7.2 [#921][].
+* Add frozen string literal to `InheritedResources` module [#933][].
+* Change return codes to new Responders defaults [#918][].
+
 ## Version 1.14.0
 
 * Remove upper bound dependency limits from gemspec.
@@ -145,7 +153,7 @@ _No changes_.
 * Added create_resource, update_resource and delete_resource hooks (thanks to Carlos Antonio da Silva).
 * Backported ActionController::Responder from Rails 3.
 * Added parent_url helper.
-* Added association_chain helper (as suggested by http://github.com/emmanuel).
+* Added association_chain helper (as suggested by https://github.com/emmanuel).
 
 ## Version 0.8
 
@@ -172,7 +180,7 @@ _No changes_.
 
 * Ensure that the default template is not rendered if the default_template_format is not accepted. This is somehow related with the security breach report:
 
-  http://www.rorsecurity.info/journal/2009/4/24/hidden-actions-render-templates.html
+  https://rorsecurity.info/journal/2009/4/24/hidden-actions-render-templates.html
 
   IR forbids based on mime types. For example: respond_to :html, :except => :index ensures that the index.html.erb view is not rendered, making your IR controllers safer.
 
@@ -225,3 +233,6 @@ _No changes_.
 * First release. Support to I18n, singleton controllers, polymorphic controllers, belongs_to, nested_belongs_to and url helpers.
 
 [#873]: https://github.com/activeadmin/inherited_resources/pull/873
+[#918]: https://github.com/activeadmin/inherited_resources/pull/918
+[#921]: https://github.com/activeadmin/inherited_resources/pull/921
+[#933]: https://github.com/activeadmin/inherited_resources/pull/933
